@@ -35,6 +35,14 @@ header{
     font-size: 16px;
     margin-right: 36px;
 }
+.nav{
+    position: relative;
+}
+.fa-bars{
+    position: absolute;
+    color: #fff;
+    display: none;
+}
 .login a{
     background: #E02C6D;
     padding: 10px 24px;
@@ -171,4 +179,161 @@ a .fa-sign-in-alt{
 }
 .bottom-banner:hover .bottom-banner-img img{
     transform: scale(1.1);
+}
+/* Styles for footer */
+.footer-area{
+    margin-top: 158px;
+}
+.logo-area{
+    width: 483.87px;
+    height: 110px;
+    margin: 0 auto;
+}
+.logo-area img{
+    margin: 20px 0;
+    width: 80%;
+    display: inline-block;
+}
+.social-icon-area{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.social-icon-area .fab{
+    margin-right: 14px;
+    font-size: 32px;
+}
+.fa-instagram-square{
+    color: rgba(133, 27, 27, 0.849);
+}
+.fa-dribbble-square{
+    color: #BE2560;
+}
+.fa-twitter-square{
+    color: #5DA9DD;
+}
+.fa-youtube-square{
+    color: #FF0101;
+}
+.social-icon-area .fab:hover{
+    cursor: pointer;
+}
+.copyright-area p{
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 63px 0;
+}
+/* --------------------------
+--------Media Queries-------- */
+/* Mobile devices */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 90%;
+        padding-left: 6%;
+    }
+    .menu-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav{
+        display: none;
+    }
+    .menu .fa-bars{
+        display: block;
+    }
+    .banner-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .banner-txt h1{
+        font-size: 36px;
+    }
+    .banner-img img{
+        width: 95%;
+        margin-top: 30%;
+        margin-left: 0;
+        overflow: hidden;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 30% 0 0 0;
+        padding: 0;
+    }
+    .player{
+        width: 78%;
+    }
+    .bottom-banner{
+        flex-direction: column;
+        width: 95%;
+    }
+    .bottom-banner-img{
+        width: 100%;
+        margin: 10% 0 0 0;
+    }
+    .bottom-banner-img img{
+        width: 100%;
+        margin: 0;
+    }
+    .footer-area{
+        width: 100%;
+    }
+    .logo-area{
+        width: 100%;
+    }
+    .logo-area img{
+        width: 90%;
+    }
+}
+/* Tablet devices */
+@media only screen and (min-width:688px) and (max-width:1024px) {
+    .container{
+        width: 90%;
+    }
+    .menu-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav{
+        display: none;
+    }
+    .menu .fa-bars{
+        display: block;
+        font-size: 1.5em;
+    }
+    .banner-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .banner-txt h1{
+        font-size: 36px;
+    }
+    .banner-img img{
+        width: 95%;
+        margin-top: 30%;
+        margin-left: 0;
+        overflow: hidden;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30% 0 0 0;
+        padding: 0;
+    }
+    .player{
+        width: 78%;
+    }
+    .bottom-banner{
+        flex-direction: column;
+        width: 95%;
+    }
+    .bottom-banner-img{
+        width: 100%;
+        margin: 10% 0 0 0;
+    }
+    .bottom-banner-img img{
+        width: 100%;
+        margin: 0;
+    }
 }
