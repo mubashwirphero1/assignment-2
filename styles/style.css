@@ -7,5 +7,168 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .container{
-    width: 100%;
+    width: 1164px;
+    margin: 0 auto;
+}
+a{
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+/* Styles for menu */
+header{
+    background-color: #2D25A0;
+}
+.menu-container{
+    display: flex;
+    justify-content: space-between;
+    height: 44px;
+}
+.menu, .login{
+    margin-top: 42px;
+}
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    margin-right: 36px;
+}
+.login a{
+    background: #E02C6D;
+    padding: 10px 24px;
+    transition: all .6s ease;
+}
+a .fa-sign-in-alt{
+    color: #fff;
+    margin-right: 10px;
+}
+.login a:hover{
+    background-color: #fff;
+    color: #E02C6D;
+}
+.login a:hover .fa-sign-in-alt{
+    color: #E02C6D;
+}
+/* Styles for banner */
+.banner-container{
+    margin-top: 121px;
+    display: flex;
+}
+.banner-txt h1{
+    font-weight: bold;
+    font-size: 64px;
+    color: #FFFFFF;
+}
+.banner-txt a{
+    background: #E02C6D;
+    padding: 10px 24px;
+    transition: all .6s ease;
+}
+.banner-txt a .fa-arrow-right{
+    margin-left: 8px;
+    color: #fff;
+}
+.banner-txt a:hover{
+    background-color: #fff;
+    color: #E02C6D;
+}
+.banner-txt a:hover .fa-arrow-right{
+    color: #E02C6D;
+}
+.banner-img{
+    margin-bottom: 145px;
+}
+.banner-img img{
+    width: 557px;
+    height: 460px;
+    margin-left: 102px;
+    transition: all .7s ease-in;
+}
+.banner-container:hover .banner-img img{
+    overflow: hidden;
+    transform: scale(1.1);
+}
+/* Styles for players */
+.players{
+    margin-top: 70px;
+    padding: 0 20px 0 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+}
+.player{
+    width: 330px;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    transition: all 0.9s ease;
+}
+.player:hover{
+    cursor: pointer;
+}
+.player-img{
+    overflow: hidden;
+}
+.player-img img{
+    width: 330px;
+    height: 256px;
+    transition: all 0.7s ease;
+}
+.player:hover .player-img img{
+    transform: scale(1.1);
+}
+.player-info h3{
+    font-weight: bold;
+    font-size: 28px;
+    color: #18191F;
+}
+.player-info p{
+    font-weight: normal;
+    font-size: 16px;
+    color: #6C6C6C;
+}
+/* Styles for bottom banner */
+.bottom-banner{
+    display: flex;
+    margin-top: 165px;
+}
+.bottom-banner-txt h2{
+    font-weight: bold;
+    font-size: 48px;
+    color: #0A0826;
+}
+.bottom-banner-txt p{
+    font-weight: normal;
+    font-size: 16px;
+    color: #6C6C6C;
+}
+.bottom-banner-txt a{
+    background: #E02C6D;
+    padding: 10px 24px;
+    transition: all .6s ease;
+    margin-top: 24px;
+    display: inline-block;
+}
+.bottom-banner-txt a .fa-arrow-right{
+    margin-left: 8px;
+    color: #fff;
+}
+.bottom-banner-txt a:hover{
+    background-color: #fff;
+    color: #E02C6D;
+}
+.bottom-banner-txt a:hover .fa-arrow-right{
+    color: #E02C6D;
+}
+.bottom-banner-img img{
+    width: 567px;
+    height: 427px;
+    margin-left: 66px;
+    transition: all .7s ease;
+    overflow: hidden;
+}
+.bottom-banner:hover .bottom-banner-img img{
+    transform: scale(1.1);
 }
